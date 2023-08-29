@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 
 public class Menu_ivan {
 
-   
+   //Clase principal
     public static void main(String[] args) {
       
         int opcion = 0; 
