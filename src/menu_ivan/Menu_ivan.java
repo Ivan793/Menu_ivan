@@ -14,7 +14,8 @@ public class Menu_ivan {
         op = JOptionPane.showInputDialog("seleccionar una opcion :\n"
                + "1. suma :\n"
                + "2. resta:\n"
-               + "3. multiplicación:\n");
+               + "3. Multiplicación :\n"
+               + "4. Division : \n");
         opcion = Integer.parseInt(op);
         
         float numero1 = Float.parseFloat(JOptionPane.showInputDialog("Escriba el primer número"));
@@ -34,7 +35,17 @@ public class Menu_ivan {
                 calculadora.setN1(numero1);
                 calculadora.setN2(numero2);
                 JOptionPane.showMessageDialog(null,"El resultado de la multiplicación es "+calculadora.multiplicar());break;
+            case 4:
+                calculadora.setN1(numero1);
+                calculadora.setN2(numero2);
+                if(numero2 == 0){
+                    JOptionPane.showMessageDialog(null,"no se puede dividir sobre cero ");
+                }else{
+                    JOptionPane.showMessageDialog(null,"El resultado de la division es "+calculadora.dividir());break;
+                }
+                 
         }
+        
     }
     
 }

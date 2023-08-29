@@ -30,6 +30,9 @@ public class Calculadora {
     public float multiplicar(){
         return n1*n2;
     }
+    public float dividir(){
+        return n1/n2;
+    }
     
     
 }
