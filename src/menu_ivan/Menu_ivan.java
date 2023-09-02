@@ -7,8 +7,8 @@ import javax.swing.JOptionPane;
 public class Menu_ivan {
 
    //Clase principal
+   //comentario
     public static void main(String[] args) {
-      
         int opcion = 0; 
         String op="";
         op = JOptionPane.showInputDialog("seleccionar una opcion :\n"
@@ -17,10 +17,11 @@ public class Menu_ivan {
                + "3. Multiplicación :\n"
                + "4. Division : \n");
         opcion = Integer.parseInt(op);
-        
         float numero1 = Float.parseFloat(JOptionPane.showInputDialog("Escriba el primer número"));
         float numero2 = Float.parseFloat(JOptionPane.showInputDialog("Escriba el segundo número"));
+        
         Calculadora calculadora = new Calculadora();
+             
         
         switch(opcion){
             case 1:
@@ -45,6 +46,7 @@ public class Menu_ivan {
                 }
                  
         }
+        
         
     }
     
